@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,6 +17,9 @@
   }
 }
 
+html{
+  scroll-behavior: smooth;
+}
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -26,8 +30,135 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+
+#about .container{
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.title{
+  font-size: 3em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin:25px 0;
+
+}
+
+
+.info-container{
+  max-width: 900px;
+  
+}
+
+.info-container p,#testimonials p {
+  font-size: 1.3em;
+  line-height: 1.7em;
+
+}
+
+/* #aboutUs{
+  background-color: red !important;
+}
+#aboutUs .info-container{
+  display: flex;
+  max-width: 900px;
+  text-align: center;
+}
+
+#aboutUs .info-container p{
+  font-size: 3em;
+} */
+
+
+
+#testimonials{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center; 
+  min-height: 950px;
+  background-color: #0f172a;
+}
+#testimonials .content-container{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ align-content: center;
+}
+
+#testimonials .title,
+#testimonials p{
+  max-width: 900px;
+  color:aliceblue
+}
+
+#testimonials .fullname{
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+
+#elispse-selector{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  gap:20px;
+  margin: 0 5em
+
+}
+
+.elipse{
+  height:25px;
+  width: 25px;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.elipse.active{
+  background-color: aliceblue;
+}
+
+#our-services{
+  background-color: #0f172a;
+}
+
+.elipse.inactive{
+  background-color: rgba(240, 248, 255, 0.286);
+}
+
+
+.mobile-only{ display: none;}
+.full-screen-only{
+  display: block;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .mobile-only{
+    display: block;
+  }
+
+  .full-screen-only{
+    display: none;
+  }
+  #testimonials .content-container{
+    flex-direction: column;
+  }
+
+  #elispse-selector{
+    flex-direction: row ;
+    margin: 5em 0;
   }
 }

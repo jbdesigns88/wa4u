@@ -1,0 +1,5 @@
+runtime: custom
+env: flex
+service: default
+env_variables:
+  NODE_ENV: "production"
