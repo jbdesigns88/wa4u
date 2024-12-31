@@ -17,6 +17,10 @@
   }
 }
 
+h1,h2,h3,h4,p,a{
+  text-wrap: balance !important;
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -160,5 +164,10 @@ body {
   #elispse-selector{
     flex-direction: row ;
     margin: 5em 0;
+  }
+
+  .title{
+    letter-spacing: 0;
+    line-height: 1.3em;
   }
 }
