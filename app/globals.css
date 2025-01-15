@@ -43,12 +43,19 @@ body {
 
 }
 
+#about,#contact{
+  background-color: #fbd406;
+}
 .title{
   font-size: 3em;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   margin:25px 0;
 
+}
+
+.subtitle{
+  font-size: 1.5em;
 }
 
 
@@ -86,7 +93,7 @@ body {
   align-items: center;
   align-content: center; 
   min-height: 950px;
-  background-color: #0f172a;
+  background-color: #000;
 }
 #testimonials .content-container{
  display: flex;
@@ -98,7 +105,7 @@ body {
 #testimonials .title,
 #testimonials p{
   max-width: 900px;
-  color:aliceblue
+  color:#a6c9c1;
 }
 
 #testimonials .fullname{
@@ -130,7 +137,7 @@ body {
 }
 
 #our-services{
-  background-color: #0f172a;
+  background-color: #000000;
 }
 
 .elipse.inactive{

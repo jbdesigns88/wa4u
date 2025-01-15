@@ -16,7 +16,15 @@ export default function Home() {
        <div className="bg-gradient-to-b from-slate-900 from-40% via slate-700 via-20% to-transparent w-full p-5 absolute z-20 "> 
          <div className="column-2">
             <div>
-              <h2 className=" text-2xl subpixel-antialiased font-bold text-zinc-200 ">Wellness All 4 U</h2>
+            <Image
+             
+                    src="/web/logo.png"
+                    alt="Wellness all for you "
+                    className='logo'
+                    width={400}
+                    height={100}
+                />
+            
             </div>
             <nav className="text-2xl leading-10   gap-8 column bg-gradeient-to-b from-bg-sky-600 to-sky-900 p-3">
             <div className="transition ease-in-out delay-500 text-slate-400 hover:text-zinc-300">
