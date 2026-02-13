@@ -6,6 +6,7 @@ import { clients } from "@/data/clients";
 import About from "./components/About";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
+import PriceList from "./components/Prices";
 
 export default function Home() {
 
@@ -43,7 +44,7 @@ export default function Home() {
               <a href="#services">services</a></div>
               <div className="transition ease-in-out delay-500 text-slate-400 hover:text-zinc-300">
 
-              <a href="contact">contact</a></div>
+              <a href="#contact">contact</a></div>
 
           </nav>
          </div>
@@ -110,7 +111,9 @@ export default function Home() {
           <div id="services" className="w-full">
             <Services/>
           </div>
-
+          <div id="prices" className="w-full">
+              <PriceList/>
+          </div>
           <div id="contact" className="w-full">
             <Contact/>
           </div>

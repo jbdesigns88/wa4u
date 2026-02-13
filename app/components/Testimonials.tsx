@@ -7,6 +7,7 @@ interface TestimonialsProps{
     clients:ClientsTestimonials[]
 }
 
+
 const Testimonials = ( {clients}: TestimonialsProps) => {
     let [currentIndex,setCurrentIndex] = useState(0)
     const size = useMemo(() => clients.length - 1, [clients]);

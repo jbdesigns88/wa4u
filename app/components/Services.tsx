@@ -5,14 +5,14 @@ const Services = () => {
         {
             title: "Soulful Meditation",
             description: "Our soulful meditation practice combines physical exercise with mindfulness and emotional awareness. By focusing on your breath and being present in the moment, this practice helps connect your mind and body for a more balanced and fulfilling experience.",
-            image: "/web/yoga-service.jpg",
+            image: "/web/mindful-service.jpg",
             alt: "Soulful Meditation",
             order: 3,
         },
         {
             title: "Mindful Strengthening",
             description: "Our mindful strengthening sessions integrate mindfulness techniques into strength training exercises. By focusing on proper form, intentional movement, and breath control, you can build strength while staying present and in tune with your body’s sensations.",
-            image: "/web/mindful-service.jpg",
+            image: "/web/yoga-service.jpg",
             alt: "Mindful Strengthening",
             order: 4,
         },
