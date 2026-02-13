@@ -18,8 +18,8 @@ const sanitizeAgainstXSS = (input: string) => {
 }
 
 
-const insertData = async (table: string, _data: object) => {
-    const { data , error } = await supabaseClient.from(table).insert([_data]);
+const insertData = async (table: string, __data: object) => {
+    const { data , error } = await supabaseClient.from(table).insert([__data]);
     
 
 
